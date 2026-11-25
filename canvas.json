@@ -1,0 +1,23 @@
+{
+  "artboards": [
+    {
+      "file": "Main.dc.html",
+      "x": 0,
+      "y": 0,
+      "w": 1560,
+      "h": 1080,
+      "title": "CarpoolMatch — 3 key screens"
+    },
+    {
+      "file": "Logo.dc.html",
+      "x": 0,
+      "y": 1200,
+      "w": 1560,
+      "h": 680,
+      "title": "CarpoolMatch — Logo"
+    }
+  ],
+  "launch": {
+    "view": "canvas"
+  }
+}

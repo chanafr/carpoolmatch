@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Design tokens taken from the Claude Design export (Main.dc.html / Logo.dc.html). */
+@theme {
+  --font-sans: "Heebo", system-ui, sans-serif;
+  --color-brand: #0F766E;
+  --color-brand-light: #0D9488;
+  --color-brand-soft: #F0FDFA;
+  --color-canvas: #F8FAFC;
+  --color-ink: #0F172A;
+
+  --animate-flash: flash 0.9s ease-out 2;
+  --animate-toast: toast-in 0.25s ease-out;
+  --animate-sheet: sheet-in 0.25s ease-out;
+
+  @keyframes flash {
+    0% { box-shadow: 0 0 0 0 rgba(13, 148, 136, 0.55); }
+    100% { box-shadow: 0 0 0 14px rgba(13, 148, 136, 0); }
+  }
+  @keyframes toast-in {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes sheet-in {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+html,
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}

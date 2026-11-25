@@ -1,0 +1,302 @@
+{
+  "institutions": [
+    {
+      "id": "inst-alon",
+      "name": "בי״ס יסודי אלון",
+      "color": "#3B82F6",
+      "defaultStartTime": "08:00",
+      "defaultEndTime": "13:30"
+    },
+    {
+      "id": "inst-shaked",
+      "name": "גן שקד",
+      "color": "#10B981",
+      "defaultStartTime": "08:00",
+      "defaultEndTime": "14:00"
+    }
+  ],
+  "parents": [
+    {
+      "id": "p-dana",
+      "name": "דנה כהן",
+      "phone": "050-1112233",
+      "seatCapacity": 4,
+      "availability": {
+        "sun": {
+          "morning": true,
+          "afternoon": true
+        },
+        "mon": {
+          "morning": true,
+          "afternoon": false
+        },
+        "tue": {
+          "morning": false,
+          "afternoon": true
+        },
+        "wed": {
+          "morning": true,
+          "afternoon": true
+        },
+        "thu": {
+          "morning": true,
+          "afternoon": false
+        }
+      }
+    },
+    {
+      "id": "p-yossi",
+      "name": "יוסי לוי",
+      "phone": "052-4445566",
+      "seatCapacity": 4,
+      "availability": {
+        "sun": {
+          "morning": false,
+          "afternoon": true
+        },
+        "mon": {
+          "morning": true,
+          "afternoon": true
+        },
+        "tue": {
+          "morning": true,
+          "afternoon": false
+        },
+        "wed": {
+          "morning": false,
+          "afternoon": true
+        },
+        "thu": {
+          "morning": true,
+          "afternoon": true
+        }
+      }
+    },
+    {
+      "id": "p-michal",
+      "name": "מיכל אברהם",
+      "phone": "054-7778899",
+      "seatCapacity": 3,
+      "availability": {
+        "sun": {
+          "morning": true,
+          "afternoon": false
+        },
+        "mon": {
+          "morning": false,
+          "afternoon": true
+        },
+        "tue": {
+          "morning": true,
+          "afternoon": true
+        },
+        "wed": {
+          "morning": true,
+          "afternoon": false
+        },
+        "thu": {
+          "morning": false,
+          "afternoon": true
+        }
+      }
+    },
+    {
+      "id": "p-oren",
+      "name": "אורן מזרחי",
+      "phone": "053-9990011",
+      "seatCapacity": 5,
+      "availability": {
+        "sun": {
+          "morning": true,
+          "afternoon": true
+        },
+        "mon": {
+          "morning": true,
+          "afternoon": true
+        },
+        "tue": {
+          "morning": true,
+          "afternoon": true
+        },
+        "wed": {
+          "morning": false,
+          "afternoon": true
+        },
+        "thu": {
+          "morning": true,
+          "afternoon": true
+        }
+      }
+    }
+  ],
+  "children": [
+    {
+      "id": "c-noa",
+      "name": "נועה",
+      "parentId": "p-dana",
+      "institutionId": "inst-alon",
+      "schedule": {
+        "sun": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "mon": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "tue": {
+          "start": "08:00",
+          "end": "14:30"
+        },
+        "wed": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "thu": {
+          "start": "08:00",
+          "end": "12:45"
+        }
+      }
+    },
+    {
+      "id": "c-itai",
+      "name": "איתי",
+      "parentId": "p-dana",
+      "institutionId": "inst-shaked",
+      "schedule": {
+        "sun": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "mon": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "08:00",
+          "end": "14:00"
+        }
+      }
+    },
+    {
+      "id": "c-ori",
+      "name": "אורי",
+      "parentId": "p-yossi",
+      "institutionId": "inst-alon",
+      "schedule": {
+        "sun": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "mon": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "tue": {
+          "start": "08:00",
+          "end": "14:30"
+        },
+        "wed": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "thu": {
+          "start": "08:00",
+          "end": "12:45"
+        }
+      }
+    },
+    {
+      "id": "c-maya",
+      "name": "מאיה",
+      "parentId": "p-michal",
+      "institutionId": "inst-shaked",
+      "schedule": {
+        "sun": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "mon": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "08:00",
+          "end": "14:00"
+        }
+      }
+    },
+    {
+      "id": "c-yuval",
+      "name": "יובל",
+      "parentId": "p-oren",
+      "institutionId": "inst-alon",
+      "schedule": {
+        "sun": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "mon": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "tue": {
+          "start": "08:00",
+          "end": "14:30"
+        },
+        "wed": {
+          "start": "08:00",
+          "end": "13:30"
+        },
+        "thu": {
+          "start": "08:00",
+          "end": "12:45"
+        }
+      }
+    },
+    {
+      "id": "c-tamar",
+      "name": "תמר",
+      "parentId": "p-oren",
+      "institutionId": "inst-shaked",
+      "schedule": {
+        "sun": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "mon": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "tue": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "wed": {
+          "start": "08:00",
+          "end": "14:00"
+        },
+        "thu": {
+          "start": "08:00",
+          "end": "14:00"
+        }
+      }
+    }
+  ]
+}
