@@ -8,6 +8,7 @@ import type { RideFilter } from './components/ScheduleGrid';
 import { SwapModal } from './components/SwapModal';
 import { FamiliesView } from './components/FamiliesView';
 import { StaleBanner, Toast } from './components/Feedback';
+import { AgentChatDock } from './components/AgentChat';
 
 function Shell() {
   const [view, setView] = useState<View>('schedule');
@@ -24,7 +25,7 @@ function Shell() {
   const closeSwap = useCallback(() => setSwapRideId(null), []);
 
   return (
-    <div className="min-h-dvh pb-20">
+    <div className="min-h-dvh pb-36">
       <TopBar view={view} onViewChange={setView} />
       <main className="mx-auto flex max-w-7xl flex-col gap-5 px-4 py-5 sm:px-6">
         {view === 'schedule' ? (
@@ -39,6 +40,7 @@ function Shell() {
       </main>
       {swapRideId && <SwapModal key={swapRideId} rideId={swapRideId} onClose={closeSwap} onSwapped={setFlashRideId} />}
       <Toast />
+      <AgentChatDock />
     </div>
   );
 }
